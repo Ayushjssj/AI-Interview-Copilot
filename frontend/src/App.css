@@ -1541,3 +1541,230 @@ pre {
 .dark-mode .logo-icon {
   color: #a855f7 !important;
 }
+
+/* =========================
+   MOBILE RESPONSIVE FINAL PATCH
+========================= */
+
+@media (max-width: 768px) {
+  .page {
+    padding: 16px;
+  }
+
+  .navbar {
+    padding: 18px;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .logo {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .nav-links {
+    display: flex;
+    overflow-x: auto;
+    gap: 14px;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .user-box {
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .theme-toggle,
+  .logout-btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 45px 20px;
+    border-radius: 26px;
+  }
+
+  .badge {
+    font-size: 14px !important;
+    padding: 10px 18px;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: 42px !important;
+    white-space: normal !important;
+    letter-spacing: -1px !important;
+  }
+
+  .hero p,
+  .hero-subtitle {
+    font-size: 16px !important;
+    line-height: 1.6;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .dashboard,
+  .analytics-grid,
+  .history-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .card,
+  .result-card,
+  .analytics-section,
+  .analytics-card,
+  .history-card,
+  .chart-card,
+  .score-dashboard {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .wide-card {
+    grid-column: span 1;
+  }
+
+  .card h2,
+  .result-card h2,
+  .analytics-section h2 {
+    font-size: 23px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+
+  input,
+  textarea {
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stats-grid,
+  .metrics-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .score-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  pre {
+    font-size: 14px;
+    padding: 18px;
+    line-height: 1.7;
+  }
+
+  .modal-overlay {
+    padding: 14px;
+    align-items: flex-start;
+  }
+
+  .modal-box {
+    width: 96vw;
+    height: 90vh;
+    border-radius: 22px;
+    margin-top: 20px;
+  }
+
+  .modal-content {
+    padding: 34px 18px 24px;
+  }
+
+  .modal-header h2 {
+    font-size: 24px;
+  }
+
+  .modal-score {
+    width: 140px;
+    height: 105px;
+  }
+
+  .modal-section {
+    padding: 18px;
+  }
+
+  .auth-page {
+    padding: 20px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 36px 24px;
+    border-radius: 24px;
+  }
+
+  .auth-card h1,
+  .signup-title {
+    font-size: 32px !important;
+    white-space: normal !important;
+  }
+
+  .toast {
+    left: 16px;
+    right: 16px;
+    top: 18px;
+    min-width: auto;
+    max-width: none;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1,
+  .hero-title {
+    font-size: 34px !important;
+  }
+
+  .hero p,
+  .hero-subtitle {
+    font-size: 15px !important;
+  }
+
+  .card h2,
+  .result-card h2 {
+    font-size: 21px;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+  }
+
+  .footer-tech {
+    font-size: 10px;
+  }
+}
