@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import axios from "axios";
 import { FaTrash, FaEye, FaTimes } from "react-icons/fa";
 
-const API = "http://127.0.0.1:8000";
+const API = import.meta.env.VITE_API_URL;
 
 export default function InterviewHistory({ refreshKey }) {
   const [history, setHistory] = useState([]);
